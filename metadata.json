@@ -1,0 +1,7 @@
+{
+  "name": "Easy Prompt",
+  "description": "An accessibility-focused application designed to help visually impaired, hearing impaired, and elderly users interact with language models. It features text-to-speech, speech-to-text, and a simple sentence to advanced prompt converter powered by Gemini.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
