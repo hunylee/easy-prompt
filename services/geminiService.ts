@@ -8,12 +8,7 @@ if (apiKey && apiKey !== 'PLACEHOLDER_API_KEY') {
 }
 
 export async function generateEasyPrompt(userInput: string): Promise<string> {
-    // Mock response for testing/demo if no key is present
-    if (!ai) {
-        console.warn("Using Mock Response because API Key is missing or invalid.");
-        await new Promise(resolve => setTimeout(resolve, 1500)); // Simulate network delay
-        return `[TEST MODE] API 키가 설정되지 않아 테스트 응답을 반환합니다.\n\n사용자 입력: "${userInput}"\n\n이것은 실제 AI가 생성한 프롬프트가 아닙니다. .env.local 파일에 올바른 API 키를 설정하면 실제 AI 모델이 작동합니다.`;
-    }
+
 
     try {
         const prompt = `
